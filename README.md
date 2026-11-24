@@ -6,6 +6,7 @@ A cozy interactive web application that encourages curiosity,
 creativity and small everyday adventures.
 
 **[🌿 Explore the Live Demo](https://gingerpanda-lab.github.io/tiny-adventures/)**
+![Tiny Adventures Preview](preview.png)
 
 ## About the Project
 
