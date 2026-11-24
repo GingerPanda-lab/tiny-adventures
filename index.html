@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tiny Adventures</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Schoolbell&family=Sue+Ellen+Francisco&display=swap"
+          rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER / LOGO / NAVIGATION -->
+    <header>
+
+        <!-- Clickable logo -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/Leaf.png" alt="Tiny Adventures">
+            </a>
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="adventures.html">My missions</a>
+            <a href="#" id="notes-link">Notes</a>
+        </nav>
+
+    </header>
+
+    <!-- MAIN PAGE CONTENT -->
+
+    <main>
+
+        <!-- HERO SECTION  -->
+
+        <section class="hero">
+
+            <div class="hero-text">
+                <div class="title-wrap">
+                    <h1>
+                        TINY<br>
+                        ADVENTURES
+                    </h1>
+                    <!-- Snail-mail tag -->
+                    <img class="side-tag"
+                         src="images/Tag.png"
+                         alt="">
+                </div>
+                <p class="tagline">
+                    Go somewhere small.
+                </p>
+            </div>
+
+            <!-- Hero Img -->
+            <div class="hero-image">
+                <img class="snail-image"
+                     src="images/Snail-big.png"
+                     alt="Snail">
+            </div>
+
+        </section>
+        
+        <!-- MISSIONS -->
+       
+        <section class="adventures">
+
+            <h2>Missions</h2>
+
+            <div class="adventure-cards">
+                <!-- LOOK CARD -->
+                <button class="card"
+                        id="look-card"
+                        type="button">
+
+                    <div class="card-image">
+                        <img src="images/Look.png"
+                             alt="Look">
+                    </div>
+
+                    <div class="card-text">
+                        <h3>LOOK</h3>
+
+                        <p id="look-text">
+                            Find one curious thing today
+                        </p>
+                    </div>
+                </button>
+
+                <!-- WANDER CARD -->
+                <button class="card"
+                        id="wander-card"
+                        type="button">
+
+                    <div class="card-image">
+                        <img src="images/Map.png"
+                             alt="Wander">
+                    </div>
+
+                    <div class="card-text">
+                        <h3>WANDER</h3>
+
+                        <p>
+                            Take a different path. Get lost
+                        </p>
+                    </div>
+                </button>
+
+                <!-- NOTES CARD -->
+                <button class="card"
+                        id="create-card"
+                        type="button">
+
+                    <div class="card-image">
+                        <img src="images/Notes.png"
+                             alt="Notes">
+                    </div>
+
+                    <div class="card-text">
+                        <h3>NOTES</h3>
+
+                        <p>
+                            Write new story. Create memories
+                        </p>
+                    </div>
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- LOOK / WANDER DIALOG -->
+    <dialog id="adventure-dialog">
+
+        <div class="dialog-content">
+
+            <!-- Image changes through JavaScript -->
+            <div class="dialog-image">
+                <img id="dialog-img"
+                     src=""
+                     alt="">
+            </div>
+
+            <!-- Mission text changes through JavaScript -->
+            <p id="adventure-text">
+                Find something red
+            </p>
+
+            <!-- Close dialog -->
+            <button id="close-dialog"
+                    type="button">
+                ×
+            </button>
+        </div>
+    </dialog>
+
+
+    <!-- NOTES DIALOG -->
+    <dialog id="create-dialog">
+
+        <div class="create-header">
+
+            <h2>NOTES</h2>
+
+            <button id="close-create"
+                    type="button">
+                ×
+            </button>
+        </div>
+
+        <!-- Entry date -->
+        <input id="create-date"
+               type="text"
+               placeholder="Date">
+
+        <!-- Entry text -->
+        <textarea id="create-text"
+                  placeholder="Write something..."></textarea>
+
+        <!-- Saved diary entries appear here -->
+        <div id="create-entries">
+        </div>
+
+        <!-- Save new note -->
+        <button id="save-entry"
+                type="button">
+            SAVE
+        </button>
+    </dialog>
+
+
+    <!-- PAPER PLANE -->
+
+    <div class="flying-plane">
+
+        <img src="images/plane.png"
+             alt="">
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+     
+    <script src="script.js"></script>
+
+</body>
+
+</html>
