@@ -52,32 +52,9 @@ nav a {
     color: #66705B;
     transition: transform 0.4s ease;
 }
-nav a::after {
-    content: "";
-    position: absolute;
-
-    width: 26px;
-    height: 26px;
-
-    background-image: url("images/flower.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-
-    right: -22px;
-    top: -12px;
-
-    opacity: 0;
-    transform: scale(0);
-    transition: 0.7s ease;
-}
 
 nav a:hover {
     transform: scale(1.09);
-}
-
-nav a:hover::after {
-    opacity: 1;
-    transform: scale(1);
 }
 
 /* IMAGES */
